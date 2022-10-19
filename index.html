@@ -1,12 +1,33 @@
 <!doctype html>
 <html lang="en">
 <head>
-   <pre style="text-align: center;">we are the synchronizers!</pre>
-<br>
-   <h3>News</h3>
-
-<p>Learning Git and reading Homo Deus from Harari</p>
-
-
+   <!DOCTYPE html>
+   <html lang="en">
+   <head>
+     <meta charset="utf-8">
+     <meta name="description" content="Synchronize is the not taking web space as I learn diy-electronics, sound synthesis, modular synthesizers and computer science.">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- Redirect -->
+     <meta http-equiv = "refresh" content = "0; url=site/start.html" />
+     <link rel='stylesheet' type='text/css' href='links/main.css'>
+     <link rel='alternate' type='application/rss+xml' title='Synchronize.rs Journal' href='http://synchronize.rs/links/rss.xml' />
+     <link rel='shortcut icon' type='image/png' href='media/services/icon.png'>
+     <title>Synchronize</title>
+   </head> 
+   <body>
+     <noscript>Continue to <a href='site/start.html'>site</a>.</noscript>
+     <script>
+       'use strict'
+       
+       const filename = toFilename(window.location.hash || 'start')
+   
+       window.location.replace(`./site/${filename}.html`)
+   
+       function toFilename(str) {
+         return `${str}`.replace('#','').replace(/[\W_]+/g,"_").toLowerCase().trim()
+       }
+     </script>
+   </body>
+   </html>
 </head>
 </html>
