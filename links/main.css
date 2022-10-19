@@ -1,0 +1,136 @@
+*:focus         { outline: none}
+::selection       { background: #eee; opacity:1.0; color:#000; padding:10px; /* Safari */ }
+
+body { background:#fff; color:#000; overflow-x: hidden; font-family: sans-serif; padding:0; margin:0; }
+
+header { padding: 45px; border-bottom: 1px solid #222; }
+header a img {}
+
+nav { padding: 45px; float: left; }
+nav details summary { margin-bottom: 30px }
+nav .site-nav section { line-height: 22px; margin-bottom: 40px;}
+nav .site-nav section h2 { margin: 20px 0 20px 0; }
+nav .site-nav section ul { margin: 0px; padding: 0px; }
+
+main { padding: 45px; float:left; max-width:700px; }
+main img { width:100%; max-width: 700px; margin-bottom: 15px;}
+main > * { max-width: 600px; margin-bottom: 30px }
+main > h1 { font-size:45px; text-transform: capitalize; display: none}
+main > h2 { font-size:30px; text-transform: capitalize}
+main > h3 { font-size:20px; text-transform: capitalize}
+main > h4 { font-size:35px; text-transform: capitalize}
+main p { line-height: 25px; font-size:16px; margin-top: 0px; }
+main > ul { line-height: 25px;}
+
+svg.sprite { width:20px; height:20px; margin-bottom:0px }
+.empty { background:#efefef; }
+.bg0 { background:white; color:black; }
+.bg1 { background:black; color:white; }
+.bg2 { background:#72dec2; color:black; }
+.bg3 { background:#ff0000; color:black; }
+.fg0 { fill:white; }
+.fg1 { fill:black; }
+.fg2 { fill:#72dec2; }
+.fg3 { fill:#ff0000; }
+code.button { background: #000; color: white; font-size: smaller; display: inline-block; padding: 0px 6px; font-weight: bold; border-radius: 2px; line-height: 22px }
+
+main hr { border:1px; clear:both; }
+
+main > ul.jump { columns:2; line-height: 20px}
+main > ul.jump li { list-style-type: decimal-leading-zero; list-style-position: inside; text-transform: capitalize;}
+main img.medium { max-width: 300px;}
+
+main > q { font-size: 20px;max-width: 500px; display: block; margin-left:30px; }
+main > pre { font-family: monospace; background: black; color:white; padding:15px; }
+main > code { font-family: monospace; font-size:12px; margin-bottom: 30px; display: block; background:black; color:white; padding:15px; white-space: pre}
+main > code comment { color:#777}
+
+main ul.gallery { background:none}
+main ul.gallery li { clear: both; display: block; height: 260px; margin-top: -2px}
+main ul.gallery li:last-child { border-bottom: 0px}
+main ul.gallery li a { display: block; padding: 10px}
+main ul.gallery li img { width:250px; float:left; display: block ; margin-right: 15px;}
+
+main .project { border-left:2px solid black; padding-left:30px; max-width: 555px;}
+main .project > * { margin-bottom: 30px }
+main .project p { padding:0px; margin-top: 0px; margin-bottom: 30px; }
+main .project img { display: block; max-width: 100%; }
+
+main .button { background-color: #000;border: 2px solid white;color: white;padding: 13px 28px;text-align: center;text-decoration: none;display: inline-block;font-size: 14px;border-radius: 200px;font-weight: bold; margin-right: 15px; margin-bottom: 15px;}
+main .button:hover { background-color: #333 !important; color: white; }
+main .button small { color:black }
+main .button.patreon { border-color: #e75942}
+main .button.patreon:hover { background: #e75942 !important}
+
+body select { color: black; margin-bottom: 20px }
+main table.drpdown { padding-bottom: 15px; font-size: 18px}
+main table.drpdown td { padding-bottom: 15px; color: black;}
+
+main > table.col tr th { text-align: left}
+main > table.col tr td { border-right:1.5px solid black}
+main > table.col tr > * { padding:5px 20px}
+main > table.col tr td:last-child { border-right: 0px }
+main > table.col tr > *:first-child { padding-left: 0px }
+main > table.col b { font-weight: bold }
+
+main img.detail { max-width: 64px; float: left;border: 1px solid #777;padding: 20px;margin: 0px 20px 20px 0px;border-radius: 3px; }
+main .shortcut { background: #fff; display: inline-block; padding: 2px 5px; margin: 0px; color: black; font-size: 12px; line-height: 16px; border-radius: 2px; }
+main .shortcut-list dt, main .shortcut-list dd { display: inline; line-height: 25px; margin-left: 0; margin-right: 10px; }
+
+main > table.logbook tr td { padding-bottom: 15px;padding-top: 15px; }
+main > table img { max-width: 100%; display: block; margin:20px 0;}
+main > table tr th { text-align: left; font-weight: bold }
+main > table tr > * { padding:5px 15px; vertical-align: top;}
+
+footer { line-height: 30px; clear:both; padding:45px; }
+footer hr { margin-bottom: 15px }
+
+/* Modular */
+
+a { color: black }
+
+ul { margin:0px 0px 30px 0px; }
+
+.col2 { columns: 2 }
+.capital { text-transform: capitalize }
+.notice { padding:20px; border:2px solid black;  }
+ul.nobull li {list-style-type: none}
+
+/* Theme */
+
+@media (prefers-color-scheme: dark) {
+  body {background: #000; color: white}
+  body header a img { filter: invert(1)}
+  body a { color: white;}
+  main > pre { background: white; color:#000}
+  main > code { background:white; color:#000}
+  body select { color: black; background-color: white;}
+  main .project { border-left:2px solid white }
+  .notice { border-color:white; }
+  .mono { filter: invert(1) }
+}
+
+/* Mobile */
+
+@media (max-width: 1100px) {
+  nav { width: 100%; }
+	nav .site-nav section { float: left; margin: 0 10px 10px 0; }
+}
+@media (max-width: 1100px) and (min-width: 651px) {
+  nav .site-nav section { width: calc(25% - 10px); }
+  nav .site-nav section:nth-child(4n + 1) { clear: left; }
+}
+
+@media (max-width: 650px) and (min-width: 501px) {
+  nav .site-nav section { width: calc(33% - 10px); }
+  nav .site-nav section:nth-child(3n + 1) { clear: left; }
+}
+
+@media (max-width: 500px) and (min-width: 351px) {
+  nav .site-nav section { width: calc(50% - 10px); }
+  nav .site-nav section:nth-child(2n + 1) { clear: left; }
+}
+
+@media (max-width: 350px) {
+  nav .site-nav section { width: 100%; }
+}
